@@ -1,2 +1,2 @@
-export { default as Products } from './Navbar/Navbar'
-export { default as Navbar } from './Products/Products'
+export { default as Navbar } from './Navbar/Navbar'
+export { default as Products } from './Products/Products'
