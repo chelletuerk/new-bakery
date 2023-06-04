@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className={classes.grow} />
             <div className={classes.button}>
               <IconButton aria-label='Show cart items' color='inherit'>
-                <Badge badgeContent={2} color='secondary'>
+                <Badge badgeContent={2} color='secondary' overlap='rectangular'>
                   <ShoppingCart />
                 </Badge>
               </IconButton>
@@ -30,25 +30,3 @@ const Navbar = () => {
   };
 
 export default Navbar
-
-// return (
-//   <>
-//     <Appbar position='fixed' className={classes.appBar} color='inherit'>
-//       <Toolbar>
-//         <Typography variant='h6' className={classes.title} color='inherit'>
-//           <img src={} alt='TheBakery.js' height='25px' className={classes.image}/>
-//             TheBakery.js
-//         </Typography>
-//         <div className={classes.grow}/>
-//         <div className={classes.button}>
-//           <IconButton aria-label='Show cart items' color='inherit'>
-//             <Badge badgeContent={2} color='secondary'>
-//               <ShoppingCart />
-//             </Badge>
-//           </IconButton>
-//         </div>
-//       </Toolbar>
-//     </Appbar>
-//   </>
-// )
-// }
