@@ -1,14 +1,14 @@
-import React from 'react';
-import { Typography, Button, Card, CardActions, CardContent, CardMedia } from '@material-ui/core';
+import React from 'react'
+import { Typography, Button, Card, CardActions, CardContent, CardMedia } from '@material-ui/core'
 
-import useStyles from './styles';
+import useStyles from './styles'
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
   const classes = useStyles();
 
-  const handleUpdateCartQty = (lineItemId, newQuantity) => onUpdateCartQty(lineItemId, newQuantity);
+  const handleUpdateCartQty = (lineItemId, newQuantity) => onUpdateCartQty(lineItemId, newQuantity)
 
-  const handleRemoveFromCart = (lineItemId) => onRemoveFromCart(lineItemId);
+  const handleRemoveFromCart = (lineItemId) => onRemoveFromCart(lineItemId)
   console.log('ITEM', item)
   return (
     <Card className='cart-item'>
@@ -23,10 +23,10 @@ const CartItem = ({ item }) => {
           <Typography>&nbsp;{item.quantity}&nbsp;</Typography>
           <Button type='button' size='small' onClick={() => handleUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
         </div>
-        <Button variant='contained' type='button' color='secondary' onClick={() => handleRemoveFromCart(item.id)}>Remove</Button>
+        <Button variant='contained' type='button' color='secondary'>Remove</Button>
       </CardActions>
     </Card>
-  );
-};
+  )
+}
 
-export default CartItem;
+export default CartItem
