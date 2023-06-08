@@ -23,6 +23,10 @@ const handleAddToCart = async (productId, quantity) => {
   setCart(item)
 }
 
+const handleUpdateCartQty = async (productId, quantity) => {
+  const response = await commerce.cart
+}
+
 useEffect(() => {
   fetchProducts()
   fetchCart()
