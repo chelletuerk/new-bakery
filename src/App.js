@@ -46,7 +46,6 @@ useEffect(() => {
   fetchProducts()
   fetchCart()
 }, [])
-console.log('CART', cart)
 
   return (
     <Router>

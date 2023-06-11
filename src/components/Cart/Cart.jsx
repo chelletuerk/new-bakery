@@ -8,8 +8,6 @@ import useStyles from './styles';
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart }) => {
   const classes = useStyles();
 
-   // const handleEmptyCart = () => onEmptyCart();
-
   const renderEmptyCart = () => (
     <Typography variant="subtitle1">You have no items in your shopping cart,
       <Link className={classes.link} to="/">start adding some</Link>!

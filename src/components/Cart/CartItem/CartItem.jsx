@@ -9,7 +9,7 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
   const handleUpdateCartQty = (lineItemId, newQuantity) => onUpdateCartQty(lineItemId, newQuantity)
 
   const handleRemoveFromCart = (lineItemId) => onRemoveFromCart(lineItemId)
-  console.log('ITEM', item)
+
   return (
     <Card className='cart-item'>
       <CardMedia image={item.image.url} alt={item.name} className={classes.media} />
